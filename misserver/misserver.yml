@@ -1,1 +1,5 @@
-name: 123
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
