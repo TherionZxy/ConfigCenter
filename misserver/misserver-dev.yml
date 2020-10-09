@@ -5,6 +5,7 @@ spring:
     password: 12345678
     driver-class-name: com.mysql.cj.jdbc.Driver
 management:
-  endpoint:
-    env:
-      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: env,info,health
